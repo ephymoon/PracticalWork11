@@ -12,28 +12,24 @@ namespace _1
         public string city;
         public string address;
         public double height;
-
         public Building()
         {
             city = "Москва";
             address = "Пушкина 52";
             height = 20;
         }
-
         public Building(string city, string address, double height)
         {
             this.city = city;
             this.address = address;
             this.height = height;
         }
-
         public Building(Building p1)
         {
             this.height = p1.height;
             this.city = p1.city;
             this.address = p1.address;
         }
-
         public virtual void Print()
         {
             Console.WriteLine("Дом в " + city + ", по адресу " + address + ", высотой " + height + "м.");
