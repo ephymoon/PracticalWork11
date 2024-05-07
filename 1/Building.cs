@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace _1
 {
-    public class Building
+    public class Building // sealed - нельзя наследовать
     {
         public string city;
         public string address;
